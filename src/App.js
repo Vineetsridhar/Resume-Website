@@ -15,13 +15,16 @@ import dart from './assets/dart.png'
 import react from './assets/react.png'
 import kotlin from './assets/kotlin.png'
 import firebase from './assets/firebase.png'
-import head from './assets/headshot.png'
+import head from './assets/bino.jpg'
+import arrow from './assets/arrow.png'
+import html from './assets/html.png'
+import css from './assets/css.png'
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import SplitText from './SplitText'
-import { ZoomIn, FadeUp, FadeRight } from 'happy-helium'
+import { ZoomIn, FadeUp, FadeRight, FadeLeft } from 'happy-helium'
 import "../node_modules/happy-helium/dist/css/happy-helium.css"
 import { Link } from 'react-scroll';
 import Section from './Section'
@@ -32,7 +35,7 @@ import headshot from './assets/headshot.png'
 function HomeScreen({ pageShow, handleClick }) {
     return (
         <div className="introViewport">
-            <img className="imgProps" src={headshot} style={{ borderRadius: 800, marginLeft: 70, justifySelf: '' }} />
+            <img className="imgProps" src={head} style={{ borderRadius: 800, marginLeft: 70, justifySelf: '' }} />
             <div style={{ marginLeft: 100 }}>
                 <div className="introTitleText">
                     Vineet Sridhar
@@ -139,7 +142,7 @@ class Apps extends Component {
 
                     <div className="line" />
 
-                    <img src={head}
+                    <img src={headshot}
                         style={{ borderRadius: 200 }} className="pic" />
                     <text className="titleText">Vineet Sridhar</text>
                     <text className="subtitleText">Personal Resume</text>
@@ -161,15 +164,20 @@ class Apps extends Component {
                                 <text style={{ cursor: 'pointer' }} className="wordProps">Skills</text>
                             </div>
                         </Link>
-                        <div className="indiHolder" >
-                            <img style={{ cursor: 'pointer' }} src={code} className="picProps" />
-                            <text style={{ cursor: 'pointer' }} className="wordProps">Projects</text>
-                        </div>
+                        <Link to="projects" spy={true}
+                            smooth={true}
+                            duration={2500}>
+                            <div className="indiHolder" >
+                                <img style={{ cursor: 'pointer' }} src={code} className="picProps" />
+                                <text style={{ cursor: 'pointer' }} className="wordProps">Projects</text>
+                            </div>
+                        </Link>
                         <div className="indiHolderFinal">
                             <img style={{ cursor: 'pointer' }} src={bulb} className="picProps" />
                             <text style={{ cursor: 'pointer' }} className="wordPropss">Activities</text>
                         </div>
-                    </div>
+                    </div>  
+                        <img className = "arrow" src={arrow} alt="arrow"/>
                     <Section
                         dark={false}
                         id="education"
@@ -240,19 +248,25 @@ class Apps extends Component {
                             <FadeUp delay={animDelay + (scale)} transitionDistance={transDistance} offset={1}>
                                 <img src={csharp} className="smallIcons" />
                             </FadeUp>
-                            <FadeUp delay={animDelay + (2 * scale)} transitionDistance={transDistance} offset={1}>
-                                <img src={dart} className="smallIcons" />
+                            <FadeUp delay={animDelay + (2 * scale)} transitionDistance={transDistance} offset={1} >
+                                <img src={html} className="smallIcons" />
                             </FadeUp>
                             <FadeUp delay={animDelay + (3 * scale)} transitionDistance={transDistance} offset={1}>
+                                <img src={dart} className="smallIcons" />
+                            </FadeUp>
+                            <FadeUp delay={animDelay + (4 * scale)} transitionDistance={transDistance} offset={1}>
                                 <img src={react} className="smallIcons" />
                             </FadeUp>
-                            <FadeUp delay={animDelay + (4 * scale)} transitionDistance={transDistance} offset={1} >
+                            <FadeUp delay={animDelay + (5 * scale)} transitionDistance={transDistance} offset={1} >
                                 <img src={kotlin} className="smallIcons" />
                             </FadeUp>
-                            <FadeUp delay={animDelay + (5 * scale)} transitionDistance={transDistance} offset={1} >
+                            <FadeUp delay={animDelay + (6 * scale)} transitionDistance={transDistance} offset={1} >
                                 <img src={firebase} className="smallIcons" />
                             </FadeUp>
-                            <FadeUp delay={animDelay + (6 * scale)} transitionDistance={transDistance} offset={1} >
+                            <FadeUp delay={animDelay + (7 * scale)} transitionDistance={transDistance} offset={1} >
+                                <img src={css} className="smallIcons" />
+                            </FadeUp>
+                            <FadeUp delay={animDelay + (8 * scale)} transitionDistance={transDistance} offset={1} >
                                 <img src={cplus} className="smallIconsFinal" />
                             </FadeUp>
 
@@ -269,14 +283,27 @@ class Apps extends Component {
                     
                                 <ul style={{textAlign:'left', marginLeft:10}}>
                                     <li><text className="expandedsubtext" style={{alignSelf:'left'}}>XML <br/></text></li>
-                                    <li><text className="expandedsubtext">HTML <br/></text></li>
-                                    <li><text className="expandedsubtext">CSS <br/></text></li>
                                     <li><text className="expandedsubtext">Google Maps API <br/></text></li>
                                     <li><text className="expandedsubtext">Selenium <br/></text></li>
                                     <li><text className="expandedsubtext">HTTP Web Requests <br/></text></li>
                                 </ul>                                
                             </div>
                         </div>
+                    </div>
+
+                    <div>
+                    <Section
+                            paddingTop={100}
+                            dark={false}
+                            id="projects"
+                            item={<FadeLeft transitionDistance={300}>
+                                <div className="sectionTitle">
+                                    Projects
+                                </div>
+                            </FadeLeft>}
+                    />
+                    <ZoomIn><div className="subtitleText" style={{textAlign:'center', fontSize:'4vw'}}>Measurable</div></ZoomIn>
+
                     </div>
                     
 

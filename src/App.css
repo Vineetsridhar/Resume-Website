@@ -80,13 +80,41 @@
 ::-webkit-scrollbar {
     display: none;
 }
+
+.arrow{
+    height: 7vmin;
+    position: relative;
+    top: 10px;
+    margin-bottom: 30px;
+    animation-name: arrowShake;
+    animation-duration: 1.2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes arrowShake{
+    10%, 90% {
+        transform: translate3d(0, -1px, 0);
+      }
+      
+      20%, 80% {
+        transform: translate3d(0, 2px, 0);
+      }
+    
+      30%, 50%, 70% {
+        transform: translate3d(0, -4px, 0);
+      }
+    
+      40%, 60% {
+        transform: translate3d(0, 4px, 0);
+      }
+}
 .njitLogo {
     height: 50vmin;
 }
 
 .line {
     position: absolute;
-    top: 200px;
+    top: 16vw;
     z-index: 0;
     height: 1px;
     background-color: #e3c4a8;
@@ -136,13 +164,13 @@
 }
 
 .smallIcons {
-    width: 100px;
+    width: 7vw;
     flex: 1;
     padding-right: 50px;
 }
 
 .smallIconsFinal {
-    width: 100px;
+    width: 7vw;
     flex: 1;
 }
 
@@ -155,7 +183,7 @@
 .indiHolder {
     flex-direction: column;
     display: inline-block;
-    height: 200px;
+    height: 150px;
     align-items: center;
     width: 110px;
     padding-right: 80px;
@@ -174,7 +202,7 @@
 .indiHolderFinal {
     flex-direction: column;
     display: inline-block;
-    height: 200px;
+    height: 150px;
     align-items: center;
     width: 110px;
     text-align: center;
@@ -190,7 +218,7 @@
 
 .picProps {
     transition: transform 200ms ease-in-out;
-    height: 110px;
+    width: 9vw;
 }
 
 .wordProps {

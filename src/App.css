@@ -111,6 +111,10 @@
 .njitLogo {
     height: 50vmin;
 }
+.njitLogo:hover{
+    animation: arrowShake 2s ease-in-out 0s 1 ;;
+    animation-duration: 2s;
+}
 
 .line {
     position: absolute;
@@ -119,12 +123,33 @@
     height: 1px;
     background-color: #e3c4a8;
     width: 90vw;
+    animation: fadein 1s ease-in-out;
+}
+@keyframes fadein{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .pic {
     z-index: 99;
     width: 16vw;
     height: 16vw;
+    animation: fadeup;
+    animation-duration: 2s;
+}
+@keyframes fadeup{
+    0%{
+        opacity: 0;
+        transform: translate3d(0, 20px, 0)
+    }
+    100%{
+        opacity: 1;
+        transform: translate3d(0,0,0)
+    }
 }
 
 .titleText {
@@ -132,6 +157,8 @@
     font-size: 5vw;
     color: #4592af;
     font-family: 'OCR A', 'OCR A', monospace;
+    animation: fadeup;
+    animation-duration: 2s;
 }
 
 .sectionTitle {
@@ -147,6 +174,8 @@
     text-align: center;
     font-family: 'OCR A', 'OCR A', monospace;
     color: #e3c4a8;
+    animation: fadeup;
+    animation-duration: 2s;
 }
 
 .subtitleText2 {
@@ -281,17 +310,18 @@
     font-family: 'Courier New', Courier, monospace;
     justify-content: center;
     align-items: flex-start;
-    color: #ffffff;
+    color: #212121;
     display: flex;
     flex-direction: column;
     justify-content: left;
+    text-align: start;
     opacity:0;
     transition: opacity 400ms;
     font-size: 6vh; 
     animation-delay: 400ms;
 }
 .expandedsubtext{
-    font-size: 4vh; 
+    font-size: 2vw; 
     margin-left: 20px;
 }
 .sidebar:hover{
@@ -306,4 +336,12 @@
     animation-delay: 400ms;
     opacity: 1;
     margin-bottom: 40px;
+}
+
+.contactViewport{
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;    
 }

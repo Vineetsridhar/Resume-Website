@@ -1,5 +1,4 @@
 import React from "react";
-import SplitText from "./SplitText"
 
 export default function Section({ id, item, paddingTop }) {
   return (

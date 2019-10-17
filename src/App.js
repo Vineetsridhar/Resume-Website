@@ -17,10 +17,13 @@ import react from './assets/react.png'
 import kotlin from './assets/kotlin.png'
 import firebase from './assets/firebase.png'
 import head from './assets/bino.jpg'
+import headshot from './assets/headshot.png'
 import arrow from './assets/arrow.png'
 import html from './assets/html.png'
 import css from './assets/css.png'
 import photoshop from './assets/photoshop.png'
+import acm from './assets/acm.png'
+import woodbridge from './assets/woodbridge.png'
 
 import SplitText from './SplitText'
 import { ZoomIn, FadeUp, FadeRight, FadeLeft, FadeIn } from 'happy-helium'
@@ -28,8 +31,9 @@ import "../node_modules/happy-helium/dist/css/happy-helium.css"
 import { Link } from 'react-scroll';
 import Section from './Section'
 
-import headshot from './assets/headshot.png'
-
+import TextField from '@material-ui/core/TextField'
+import CustomizedInput from './CustomInput'
+import ReactTooltip from 'react-tooltip'
 
 function HomeScreen({ pageShow, handleClick }) {
     return (
@@ -105,12 +109,16 @@ function TitleScreen() {
                         </div>
                     </ZoomIn>
                 </Link>
-                <ZoomIn>
-                    <div className="indiHolder">
-                        <img style={{ cursor: 'pointer' }} src={bulb} className="picProps" />
-                        <text style={{ cursor: 'pointer' }} className="wordProps">Activities</text>
-                    </div>
-                </ZoomIn>
+                <Link to="activities" spy={true}
+                    smooth={true}
+                    duration={3000}>
+                    <ZoomIn>
+                        <div className="indiHolder">
+                            <img style={{ cursor: 'pointer' }} src={bulb} className="picProps" />
+                            <text style={{ cursor: 'pointer' }} className="wordProps">Activities</text>
+                        </div>
+                    </ZoomIn>
+                </Link>
                 <Link to="contact" spy={true}
                     smooth={true}
                     duration={2500}>
@@ -262,7 +270,7 @@ function SkillsScreen() {
                     <text className="expandedsubtext"><br />> XML <br /><br /></text>
                     <text className="expandedsubtext" >> SQL <br /><br /></text>
                     <text className="expandedsubtext">> Selenium <br /><br /></text>
-                    <text className="expandedsubtext">> HTTP Web Requests <br /><br /></text>
+                    <text className="expandedsubtext">> Socket API / Networking <br /><br /></text>
                 </div>
             </div>
         </div>
@@ -279,13 +287,13 @@ function ProjectsScreen() {
                 item={<FadeLeft transitionDistance={300}>
                     <div className="sectionTitle">
                         Projects
-                                </div>
+                    </div>
                 </FadeLeft>}
             />
             <ZoomIn><div className="subtitleText" style={{ textAlign: 'center', fontSize: '4vw' }}>Measurable</div></ZoomIn>
         </div>
     )
-}
+} 
 
 function ContactScreen() {
     return (
@@ -294,14 +302,71 @@ function ContactScreen() {
                 paddingTop={100}
                 dark={false}
                 id="contact"
-                item={<FadeLeft transitionDistance={300}>
+                item={<FadeRight transitionDistance={300}>
                     <div className="sectionTitle">
                         Contact Me
                 </div>
-                </FadeLeft>}
+                </FadeRight>}
             />
+            <div className="subContact">
+                <div className="sendMessage">
+                <text className="subtitleText">Name</text>
+                <CustomizedInput label="Full Name" />
+                <text className="subtitleText">Email</text>
+                <CustomizedInput label="Full Name" />
+                <text className="subtitleText">Message</text>
+                <CustomizedInput label="Full Name" multiline={true} />
+                </div>
+                <div className="contactIcons"></div>
+            </div>
         </div>
     )
+}
+
+function ActivitiesScreen() {
+    return(
+        <div className="ActivityViewport" >
+            <Section
+                paddingTop={100}
+                dark={false}
+                id="activities"
+                item={<FadeRight transitionDistance={300}>
+                    <div className="sectionTitleActivities">
+                        Activities And Honors
+                </div>
+                </FadeRight>}
+            />
+            <ZoomIn>
+            <div className="acmBox">
+                <img src={acm} className = "acmLogo"/>
+                <div className = "acmAbt">
+                    <text style={{ fontSize:'1.4em', fontWeight:'bold', color:"#ffffff"}}>Association of Computing Machinery</text>
+                    <p data-tip="SIG: Special Interest Group">Taught 
+                        SIG Android during my freshman year and SIG Flutter during my sophomore year</p>
+                    <p/>Taught students the fundementals of mobile application programming 
+                        using both native development as well as framework development.
+                    <p/> Worked collaboratively in order to create different applications using differnt APIs and firebase backend
+                    <ReactTooltip />
+                </div>
+            </div>
+            </ZoomIn>
+            <ZoomIn>
+            <div className="woodBox" >
+                <img src={woodbridge} className = "woodLogo"/>
+                <div className = "acmAbt">
+                    <text style={{ fontSize:'1.4em', fontWeight:'bold', color:"#ffffff"}}>Woodbridge High School</text>
+                    <p/> French honors society
+                    <br/> National honors society
+                    <br/> President of Freshman Mentors
+                    <br/> President of the Future Business Leaders of America
+                    <br/> Captain of the Future Problem Solvers Team
+                    <br/> Led team to nationals
+                    
+                </div>
+            </div>
+            </ZoomIn>
+        </div>
+    );
 }
 
 class Apps extends Component {
@@ -322,7 +387,6 @@ class Apps extends Component {
         this.setState({ pageShow: !this.state.pageShow })
     }
 
-
     render() {
         return (
             this.state.pageShow ? <HomeScreen pageShow={this.state.pageShow} handleClick={this.handleClick} /> :
@@ -330,8 +394,9 @@ class Apps extends Component {
                     <TitleScreen />
                     <EducationScreen />
                     <SkillsScreen />
-                    <ProjectsScreen />
-                    <ContactScreen />
+                    {/* <ProjectsScreen /> */}
+                    <ActivitiesScreen />
+                    
                     <div style={{ marginTop: 1000, color: '#FFFFFF' }} />
                 </div>
         );

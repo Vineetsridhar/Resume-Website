@@ -168,6 +168,16 @@
     font-family: 'OCR A', 'OCR A', monospace;
 }
 
+
+.sectionTitleActivities {
+    padding-top: 2vh;
+    padding-bottom: 3vh;
+    font-size: 6vw;
+    text-align: center;
+    color: #4592af;
+    font-family: 'OCR A', 'OCR A', monospace;
+}
+
 .subtitleText {
     padding-top: 2vh;
     font-size: 3vw;
@@ -258,6 +268,7 @@
     position: relative;
     top: 10px;
     transition: opacity 200ms ease-in-out;
+
 }
 
 .wordPropss {
@@ -325,7 +336,8 @@
     margin-left: 20px;
 }
 .sidebar:hover{
-    height: 100vh;
+    display: inline-block;
+    height: 65vh;
     width: 20vw;
     border-top-left-radius: 30px;
     border-bottom-left-radius: 30px;}
@@ -338,10 +350,76 @@
     margin-bottom: 40px;
 }
 
+.acmLogo{
+    padding-top: 5vh;
+    height:20vw;
+    width:20vw;
+}
+
+.woodLogo{
+    padding-top: 5vh;
+    height:15vw;
+    padding-right: 4vw;
+}
+
+.acmBox{
+    display:flex;
+    width: 80%;
+    flex-direction: row;
+    color: #e3c4a8;
+    background-color: #2e2e2e;
+    align-items: center;
+    margin:0 auto;
+    padding: 20px;
+    border-radius: 10pt;
+    -webkit-box-shadow: 0px 0px 22px -5px #4592af;
+    -moz-box-shadow: 0px 0px 22px -5px #4592af;
+    box-shadow: 0px 0px 22px -5px #4592af;
+}
+.woodBox{
+    display:flex;
+    width: 80%;
+    flex-direction: row;
+    color: #e3c4a8;
+    background-color: #2e2e2e;
+    align-items: center;
+    margin:0 auto;
+    padding: 20px;
+    top:50px;
+    border-radius: 10pt;
+    -webkit-box-shadow: 0px 0px 22px -5px #af4545;
+    -moz-box-shadow: 0px 0px 22px -5px #af4545;
+    box-shadow: 0px 0px 22px -5px #af4545;
+}
+
+.acmAbt{
+    font-family: 'OCR A', 'OCR A', monospace;
+    flex-direction: row;
+    text-align: center;
+    flex:2;
+    padding-top: 20px;
+    text-align: left;
+    font-size: 1.4em;
+    font-family: 'Courier New', Courier, monospace;
+    color: #e3c4a8;
+}
+
+
 .contactViewport{
     height: 100%;
     width: 100%;
-    flex-direction: row;
+    text-align: center;
+}
+
+.subContact{
     display: flex;
-    justify-content: center;    
+    flex-direction: row;
+}
+.sendMessage{
+    display: flex;
+    flex-direction: column;
+    flex:1;
+}
+.contactIcons{
+    flex:1;
 }

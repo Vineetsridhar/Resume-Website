@@ -31,6 +31,15 @@ import git from './git.png'
 import graphql from './graphql.png'
 import aws from './aws.png'
 import nodejs from './nodejs.png'
+import glyde from './glyde.png'
+import hacknjit from './hacknjit.png'
+import datatransfer from './datatransfer.png'
+import ruler from './ruler.png'
+import docker from './docker.png'
+import sql from './sql.png'
+import github from './github.png'
+import email from './email.png'
+import linkedin from './linkedin.png'
 
 let images = {
     mongo, 
@@ -63,7 +72,16 @@ let images = {
     acm,
     woodbridge,
     bash,
-    js
+    js,
+    glyde,
+    hacknjit,
+    datatransfer,
+    ruler,
+    docker,
+    sql,
+    github,
+    email,
+    linkedin
 }
 
 export default images

@@ -198,14 +198,18 @@
 
 .iconHolder {
     flex-direction: row;
-    padding-top: 5vh;
+    padding-top: 16px;
     max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .smallIcons {
-    width: 7vw;
+    width: 100px;
     flex: 1;
-    padding-right: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
 }
 
 .smallIconsFinal {
@@ -225,9 +229,9 @@
     height: 150px;
     align-items: center;
     width: 110px;
-    padding-right: 80px;
-    justify-content: center;
     text-align: center;
+    padding-right: 20px;
+    padding-left: 20px;
 }
 
 .indiHolder:hover>.picProps {
@@ -236,15 +240,6 @@
 
 .indiHolder:hover>.wordProps {
     opacity: 1;
-}
-
-.indiHolderFinal {
-    flex-direction: column;
-    display: inline-block;
-    height: 150px;
-    align-items: center;
-    width: 110px;
-    text-align: center;
 }
 
 .indiHolderFinal:hover>.picProps {
@@ -257,23 +252,13 @@
 
 .picProps {
     transition: transform 200ms ease-in-out;
-    width: 9vw;
+    width: 100px;
+    max-height: 100px;
 }
 
 .wordProps {
     font-family: 'OCR A', 'OCR A', monospace;
-    font-size: 2.5vh;
-    color: #e3c4a8;
-    opacity: 0;
-    position: relative;
-    top: 10px;
-    transition: opacity 200ms ease-in-out;
-
-}
-
-.wordPropss {
-    font-family: 'OCR A', 'OCR A', monospace;
-    font-size: 2.5vh;
+    font-size: 15px;
     position: relative;
     top: 10px;
     text-align: center;
@@ -287,8 +272,8 @@
     flex-direction: column;
     align-items: center;
     overflow: hidden;
-    height: 100vh;
-    width: 100vw;
+    height: 100%;
+    width: 100%;
 }
 
 .sidebar{
@@ -351,9 +336,7 @@
 }
 
 .acmLogo{
-    padding-top: 5vh;
-    height:20vw;
-    width:20vw;
+    max-height: 300px;    
 }
 
 .woodLogo{

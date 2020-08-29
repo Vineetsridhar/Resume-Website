@@ -18,12 +18,22 @@ class Apps extends Component {
         super(props)
         this.state = {
             height: 0,
-            pageShow: true
+            pageShow: true,
+            mobile: window.innerWidth <= 500
         }
         this.handleClick = this.handleClick.bind(this)
+        this.resizeHandler = this.resizeHandler.bind(this)
     }
     componentDidMount() {
         document.title = "Vineet Sridhar"
+        window.addEventListener('resize', this.resizeHandler);
+    }
+
+    resizeHandler(){
+        let mobile = window.innerWidth <= 500;
+        if(mobile !== this.state.mobile){
+            this.setState({mobile})
+        }
     }
 
     handleClick() {
@@ -32,7 +42,7 @@ class Apps extends Component {
 
     render() {
         return (
-            this.state.pageShow ? <HomeScreen pageShow={this.state.pageShow} handleClick={this.handleClick} /> :
+            this.state.pageShow ? <HomeScreen pageShow={this.state.pageShow} handleClick={this.handleClick} mobile={this.state.mobile}/> :
                 <div className="viewport" style={{ flexGrow: 1 }} >
                     <TitleScreen />
                     <ProjectsScreen />

@@ -7,10 +7,6 @@
   background-color:#212121;
   overflow: hidden;
 }
-.imgProps{
-    height: 70vmin;
-    width: 70vmin;
-}
 .introTitleText{
     padding-top:2vh;
     font-size: 5vw;

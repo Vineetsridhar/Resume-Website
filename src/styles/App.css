@@ -195,20 +195,15 @@
 .iconHolder {
     padding-top: 16px;
     display: flex;
-    min-height: 200px;
+    height: 20vh;
 }
 
 .smallIcons {
-    max-width: 5vw;
+    max-width: 6vw;
     flex: 1;
     padding-right: 25px;
     padding-left: 25px;
     object-fit: contain;
-}
-
-.smallIconsFinal {
-    width: 7vw;
-    flex: 1;
 }
 
 .wordHolder {
@@ -219,12 +214,12 @@
 
 .indiHolder {
     flex-direction: column;
-    display: inline-block;
+    display: flex;
     align-items: center;
     width: 6vw;
     text-align: center;
-    padding-right: 20px;
-    padding-left: 20px;
+    padding-right: 30px;
+    padding-left: 30px;
 }
 
 .indiHolder:hover>.picProps {
@@ -246,7 +241,7 @@
     font-family: 'OCR A', 'OCR A', monospace;
     font-size: 15px;
     position: relative;
-    top: 20px;
+    top: 25px;
     text-align: center;
     color: #e3c4a8;
     opacity: 0;

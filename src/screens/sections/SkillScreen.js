@@ -43,8 +43,8 @@ export default function SkillsScreen() {
                             {...heliumOptions}
                             delay={animDelay + (i * scale)} transitionDistance={transDistance}>
                             <div className="indiHolder">
-                                <img src={languageArray[0]} className="picProps" style={{ maxHeight: 180 }} />
-                                <text className="wordProps">{languageArray[1]}</text>
+                                <img src={languageArray[0]} className="picProps" style={{ width:'8vw', maxHeight: 200 }} />
+                                <text className="wordProps" style={{ width:'8vw' }}>{languageArray[1]}</text>
                             </div>
                         </FadeUp>)
                     )

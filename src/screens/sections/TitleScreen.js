@@ -8,8 +8,8 @@ export default function TitleScreen() {
         <div className="viewport">
             <div className="line" />
 
-            <img src={images.headshot}
-                style={{ borderRadius: 200 }} className="pic" />
+            <img src={images.squat}
+                style={{ borderRadius: '8vw' }} className="pic" />
 
             <text className="titleText">Vineet Sridhar</text>
 
@@ -38,17 +38,6 @@ export default function TitleScreen() {
                     </ZoomIn>
                 </Link>
 
-                <Link to="activities" spy={true}
-                    smooth={true}
-                    duration={2000}>
-                    <ZoomIn>
-                        <div className="indiHolder">
-                            <img style={{ cursor: 'pointer' }} src={images.bulb} className="picProps" />
-                            <text style={{ cursor: 'pointer' }} className="wordProps">Activities</text>
-                        </div>
-                    </ZoomIn>
-                </Link>
-
                 <Link to="education" spy={true}
                     smooth={true}
                     duration={2500}>
@@ -56,6 +45,17 @@ export default function TitleScreen() {
                         <div className="indiHolder">
                             <img style={{ cursor: 'pointer' }} src={images.hat} className="picProps" />
                             <text style={{ cursor: 'pointer' }} className="wordProps">Education</text>
+                        </div>
+                    </ZoomIn>
+                </Link>
+
+                <Link to="activities" spy={true}
+                    smooth={true}
+                    duration={2000}>
+                    <ZoomIn>
+                        <div className="indiHolder">
+                            <img style={{ cursor: 'pointer' }} src={images.bulb} className="picProps" />
+                            <text style={{ cursor: 'pointer' }} className="wordProps">Activities</text>
                         </div>
                     </ZoomIn>
                 </Link>

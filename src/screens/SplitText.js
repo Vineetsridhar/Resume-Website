@@ -17,7 +17,7 @@ const SplitTextStyled = styled.div`
   }
   .text, .text2 {
     position: relative;
-    font-size: 80px;
+    font-size: 8vw;
     display: inline-block;
     color:#4592af;
     font-family: 'OCR A', 'OCR A', monospace;

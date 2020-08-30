@@ -40,8 +40,10 @@ import sql from './sql.png'
 import github from './github.png'
 import email from './email.png'
 import linkedin from './linkedin.png'
+import squat from './squat.jpg'
 
 let images = {
+    squat,
     mongo, 
     git,
     graphql,

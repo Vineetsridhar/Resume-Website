@@ -28,7 +28,7 @@ export default function ContactScreen() {
                     return (
                         <ZoomIn>
                             <div className="indiHolder" >
-                                <img style={{ cursor: 'pointer', maxHeight:100, maxWidth:100 }} src={item[0]} className="picProps" onClick={item[2]} />
+                                <img style={{ cursor: 'pointer', maxHeight:200, maxWidth:'6vw' }} src={item[0]} className="picProps" onClick={item[2]} />
                                 <text style={{ cursor: 'pointer' }} className="wordProps">{item[1]}</text>
                             </div>
                         </ZoomIn>

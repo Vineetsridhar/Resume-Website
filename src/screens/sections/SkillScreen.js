@@ -2,7 +2,14 @@ import React from 'react'
 import images from '../../assets'
 import { ZoomIn, FadeUp, FadeRight } from 'happy-helium'
 import Section from '../Section'
-
+const heliumOptions = {
+    speed: 450,
+    easing: 'ease',
+    transitionDistance: 300,
+    delay: 40,
+    animation: true,
+    offset: 20 //based on percentage from bottom of browser window
+}
 export default function SkillsScreen() {
     const animDelay = 100
     const scale = 50
@@ -25,24 +32,25 @@ export default function SkillsScreen() {
             <ZoomIn>
                 <div
                     className="subtitleText"
-                    style={{ textAlign: 'left', width: '100%', paddingLeft: 200 }}>
+                    style={{ textAlign: 'left', width: '100%', }}>
                     My Favorites
                     </div>
             </ZoomIn>
-            <div className='iconHolder' style={{ height: 150 }}>
+            <div className='iconHolder'>
                 {
                     mainImages.map((languageArray, i) =>
                         (<FadeUp
+                            {...heliumOptions}
                             delay={animDelay + (i * scale)} transitionDistance={transDistance}>
                             <div className="indiHolder">
-                                <img src={languageArray[0]} className="picProps" />
+                                <img src={languageArray[0]} className="picProps" style={{ maxHeight: 180 }} />
                                 <text className="wordProps">{languageArray[1]}</text>
                             </div>
                         </FadeUp>)
                     )
                 }
             </div>
-            <ZoomIn>
+            <ZoomIn  {...heliumOptions}>
                 <div
                     className="subtitleText"
                     style={{ textAlign: 'left', width: '100%', paddingTop: 16 }}>
@@ -51,19 +59,19 @@ export default function SkillsScreen() {
             </ZoomIn>
             <div className="iconHolder">
                 {subImages.map((image, i) =>
-                    <FadeUp delay={animDelay + (scale * (i))} transitionDistance={transDistance} offset={1}>
-                        <img src={image} className="smallIcons" />
+                    <FadeUp  {...heliumOptions} delay={animDelay + (scale * (i))} transitionDistance={transDistance} >
+                        <img src={image} className="smallIcons" style={{ maxHeight: 200 }} />
                     </FadeUp>
                 )}
             </div>
-
-            <div className="sectionTitle" style={{ fontSize: '6vw' }}>
-                Skills
-            </div>
-
+            <ZoomIn  {...heliumOptions}>
+                <div className="sectionTitle" style={{ fontSize: '6vw' }}>
+                    Skills
+                </div>
+            </ZoomIn>
             <div className="iconHolder">
                 {skills.map((image, i) =>
-                    <FadeUp delay={animDelay + (scale * (i))} transitionDistance={transDistance} offset={1}>
+                    <FadeUp {...heliumOptions} delay={animDelay + (scale * (i))} transitionDistance={transDistance} >
                         <img src={image} className="smallIcons" />
                     </FadeUp>
                 )}

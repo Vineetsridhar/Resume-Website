@@ -193,17 +193,13 @@
 }
 
 .iconHolder {
-    flex-direction: row;
     padding-top: 16px;
-    max-width: 100%;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow-x: scroll;
+    min-height: 200px;
 }
 
 .smallIcons {
-    max-width: 100px;
+    max-width: 5vw;
     flex: 1;
     padding-right: 25px;
     padding-left: 25px;
@@ -224,9 +220,8 @@
 .indiHolder {
     flex-direction: column;
     display: inline-block;
-    height: 150px;
     align-items: center;
-    width: 110px;
+    width: 6vw;
     text-align: center;
     padding-right: 20px;
     padding-left: 20px;
@@ -242,15 +237,16 @@
 
 .picProps {
     transition: transform 200ms ease-in-out;
-    width: 100px;
-    max-height: 100px;
+    width: 6vw;
+    object-fit: contain;
+    max-height: 150px;
 }
 
 .wordProps {
     font-family: 'OCR A', 'OCR A', monospace;
     font-size: 15px;
     position: relative;
-    top: 10px;
+    top: 20px;
     text-align: center;
     color: #e3c4a8;
     opacity: 0;

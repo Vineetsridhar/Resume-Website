@@ -47,8 +47,8 @@ class Apps extends Component {
                     <TitleScreen />
                     <ProjectsScreen />
                     <SkillsScreen />
-                    <ActivitiesScreen />
                     <EducationScreen />
+                    <ActivitiesScreen />
                     <ContactScreen />
 
                     <div style={{ marginTop: 1000, color: '#FFFFFF' }} />

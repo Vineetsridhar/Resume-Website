@@ -39,17 +39,17 @@ export default function ActivitiesScreen() {
             </ZoomIn>
             <ZoomIn>
                 <div className="genericBox woodBox" >
-                    <img src={images.woodbridge} className="woodLogo" />
+                    <img src={images.woodbridge} className="logo" />
                     <div className="abt">
                         <text style={{ fontSize: '1.4em', fontWeight: 'bold', color: "#ffffff" }}>Woodbridge High School</text>
                         <p /> GPA: 4.0/4.0
-                    <br /> French honors society
-                    <br /> National honors society
-                    <br /> President of Freshman Mentors
-                    <br /> President of the Future Business Leaders of America
-                    <br /> Captain of the Future Problem Solvers Team
-                    <br /> Led team to nationals
-                </div>
+                        <br /> French honors society
+                        <br /> National honors society
+                        <br /> President of Freshman Mentors
+                        <br /> President of the Future Business Leaders of America
+                        <br /> Captain of the Future Problem Solvers Team
+                        <br /> Led team to nationals
+                    </div>
                 </div>
             </ZoomIn>
         </div>

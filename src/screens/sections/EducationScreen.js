@@ -37,7 +37,7 @@ export default function EducationScreen() {
                     <text>B.S. Computer Science<br /></text>
                     <text>Data Science and Business Minor<br /></text>
                     <text>Expected Graduation: May 2022 <br /></text>
-                    <text style={{ fontWeight: 'bold', fontSize: '2.5vw', color: '#ffffff' }}> GPA: 3.96/4.0</text>
+                    <text style={{ fontWeight: 'bold', fontSize: '2.5vw', color: '#ffffff' }}> GPA: 3.98/4.0</text>
                 </div>
             </ZoomIn>
 

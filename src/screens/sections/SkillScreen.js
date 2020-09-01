@@ -10,7 +10,7 @@ const heliumOptions = {
     animation: true,
     offset: 20 //based on percentage from bottom of browser window
 }
-export default function SkillsScreen() {
+export default function SkillsScreen({mobile}) {
     const animDelay = 100
     const scale = 50
     const transDistance = 100
@@ -43,8 +43,8 @@ export default function SkillsScreen() {
                             {...heliumOptions}
                             delay={animDelay + (i * scale)} transitionDistance={transDistance}>
                             <div className="indiHolder">
-                                <img src={languageArray[0]} className="picProps" style={{ width:'8vw', maxHeight: 200 }} />
-                                <text className="wordProps" style={{ width:'8vw' }}>{languageArray[1]}</text>
+                                <img src={languageArray[0]} className="picProps" style={{ width:mobile ? 50 :'8vw', maxHeight: 200 }} />
+                                <text className="wordProps" style={{ width:mobile ? 50 :'8vw' }}>{languageArray[1]}</text>
                             </div>
                         </FadeUp>)
                     )
@@ -57,7 +57,7 @@ export default function SkillsScreen() {
                     Others I've worked with
                     </div>
             </ZoomIn>
-            <div className="iconHolder">
+            <div className="iconHolder" style={mobile ? {overflowX:'scroll'} : {}}>
                 {subImages.map((image, i) =>
                     <FadeUp  {...heliumOptions} delay={animDelay + (scale * (i))} transitionDistance={transDistance} >
                         <img src={image} className="smallIcons" style={{ maxHeight: 200 }} />
@@ -69,10 +69,10 @@ export default function SkillsScreen() {
                     Skills
                 </div>
             </ZoomIn>
-            <div className="iconHolder">
+            <div className="iconHolder" style={mobile ? {overflowX:'scroll'} : {}}>
                 {skills.map((image, i) =>
                     <FadeUp {...heliumOptions} delay={animDelay + (scale * (i))} transitionDistance={transDistance} >
-                        <img src={image} className="smallIcons" />
+                        <img src={image} style={mobile?{maxWidth:200}:{}} className="smallIcons" />
                     </FadeUp>
                 )}
             </div>

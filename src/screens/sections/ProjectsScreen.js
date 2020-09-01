@@ -6,7 +6,7 @@ import Section from '../Section'
 import SplitText from '../SplitText'
 import ReactTooltip from 'react-tooltip'
 
-export default function ProjectsScreen() {
+export default function ProjectsScreen({mobile}) {
 
     return (
         <div className="viewport" style={{ paddingBottom: 50 }} >
@@ -24,13 +24,13 @@ export default function ProjectsScreen() {
                 <div className="genericBox clickableBox glydeBox" 
                 onClick={() => window.open("https://glyde.app/", "_blank")}
                 data-tip="Click to see our site">
-                    <img src={images.glyde} className="logo" />
+                    {mobile ? null :<img src={images.glyde} className="logo" />}
                     <ReactTooltip />
                     <div className="abt">
                         <span style={{ flexDirection: 'row', display: 'flex', maxHeight: '100px' }}>
                             <h1 style={{ fontSize: '1.8em', fontWeight: 'bold', color: "#ffffff" }}>Glyde</h1>
-                            {[images.javascript, images.react, images.aws, images.mongo].map((image, i) =>
-                                <img src={image} className="smallIcons" />
+                            {mobile ? null :[images.javascript, images.react, images.aws, images.mongo].map((image, i) =>
+                                <img src={image} style={mobile? {paddingRight:10, paddingLeft:10}:{}} className="smallIcons" />
                             )}
                         </span>
                         <p>Application which is automating the ordering and payment
@@ -46,11 +46,11 @@ export default function ProjectsScreen() {
             </ZoomIn>
             <ZoomIn>
                 <div className="genericBox clickableBox dataTransferBox" onClick={() => window.open("https://github.com/SamC12345/MagicMirror", "_blank")}>
-                    <img src={images.hacknjit} className="logo" />
+                    {mobile? null :<img src={images.hacknjit} className="logo" />}
                     <div className="abt">
                         <span style={{ flexDirection: 'row', display: 'flex', maxHeight: '100px' }}>
                             <h1 style={{ fontSize: '1.8em', fontWeight: 'bold', color: "#ffffff" }}>Magic Mirror</h1>
-                            {[images.python].map((image, i) =>
+                            {mobile ? null :[images.python].map((image, i) =>
                                 <img src={image} className="smallIcons" />
                             )}
                         </span>
@@ -70,11 +70,11 @@ export default function ProjectsScreen() {
             </ZoomIn>
             <ZoomIn>
                 <div className="genericBox clickableBox glydeBox" onClick={() => window.open("https://github.com/Vineetsridhar/sound-data-transfer", "_blank")}>
-                    <img src={images.datatransfer} className="logo" />
+                    {mobile ? null :<img src={images.datatransfer} className="logo" />}
                     <div className="abt">
                         <span style={{ flexDirection: 'row', display: 'flex', maxHeight: '100px' }}>
-                            <h1 style={{ fontSize: '1.8em', fontWeight: 'bold', color: "#ffffff" }}>Wireless Data Transfer</h1>
-                            {[images.python].map((image, i) =>
+                            <h1 style={{ fontSize: '1.8em', fontWeight: 'bold', color: "#ffffff" }}>Sound Data Transfer</h1>
+                            {mobile ? null :[images.python].map((image, i) =>
                                 <img src={image} className="smallIcons" />
                             )}
                         </span>
@@ -97,11 +97,11 @@ export default function ProjectsScreen() {
             </ZoomIn>
             <ZoomIn>
                 <div className="genericBox clickableBox measurableBox" onClick={() => window.open("https://github.com/Vineetsridhar/measurable", "_blank")}>
-                    <img src={images.ruler} className="logo" />
+                    {mobile ? null : <img src={images.ruler} className="logo" />}
                     <div className="abt">
                         <span style={{ flexDirection: 'row', display: 'flex', maxHeight: '100px' }}>
                             <h1 style={{ fontSize: '1.8em', fontWeight: 'bold', color: "#ffffff" }}>Measurable</h1>
-                            {[images.java, images.android].map((image, i) =>
+                            {mobile ? null :[images.java, images.android].map((image, i) =>
                                 <img src={image} className="smallIcons" />
                             )}
                         </span>

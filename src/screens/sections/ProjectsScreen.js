@@ -82,7 +82,7 @@ export default function ProjectsScreen({mobile}) {
                         <p>Worked in a team of two to create an application which uses
                             a speaker and microphone to exchange information </p>
                         <p>Could be useful in places like an arena where a single
-                        speaker can broadcast information, and user’s phones can
+                            speaker can broadcast information, and user’s phones can
                             pick up that information using a microphone</p>
                         <h2 style={{
                             width: '100%',
@@ -92,6 +92,29 @@ export default function ProjectsScreen({mobile}) {
                             onClick={() => window.open("https://www.youtube.com/watch?v=el1mwSr1VAY", "_blank")}>
                             See it in action!
                             </h2>
+                    </div>
+                </div>
+            </ZoomIn>
+            <ZoomIn>
+                <div className="genericBox clickableBox rmpBox" onClick={() => window.open("https://github.com/Vineetsridhar/RMPExtension", "_blank")}>
+                    {mobile ? null : <img src={images.logo} className="logo" />}
+                    <div className="abt">
+                        <span style={{ flexDirection: 'row', display: 'flex', maxHeight: '100px' }}>
+                            <h1 style={{ fontSize: '1.8em', fontWeight: 'bold', color: "#ffffff" }}>Schedule Builder Ext</h1>
+                            {mobile ? null :[images.javascript].map((image, i) =>
+                                <img src={image} className="smallIcons" />
+                            )}
+                        </span>
+                        <p>Chrome extension which displays professor ratings directly
+                            on the NJIT Schedule builder. </p>
+                        <p>Created a GraphQL API to query professor ratings from
+                            PostgreSQL database </p>
+                        <p>Used Docker to containerize the Node server, and used
+                            Docker-Compose to run the DB and Server on GCP  </p>
+                        <p>Created a simple caching mechanism, so that the
+                            RateMyProfessor site is not constantly being scraped.   </p>
+                        <p>Useful for NJIT students so that they do not have to look up
+                            each individual professor when making schedules </p>
                     </div>
                 </div>
             </ZoomIn>

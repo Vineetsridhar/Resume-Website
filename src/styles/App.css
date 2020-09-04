@@ -347,6 +347,12 @@
     border-radius: 10pt;
 }
 
+.rmpBox{
+    -webkit-box-shadow: 0px 0px 22px -5px #4592af;
+    -moz-box-shadow: 0px 0px 22px -5px #4592af;
+    box-shadow: 0px 0px 22px -5px #4592af;
+}
+
 .acmBox{
     -webkit-box-shadow: 0px 0px 22px -5px #4592af;
     -moz-box-shadow: 0px 0px 22px -5px #4592af;

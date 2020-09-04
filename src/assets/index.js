@@ -41,8 +41,10 @@ import github from './github.png'
 import email from './email.png'
 import linkedin from './linkedin.png'
 import squat from './squat.jpg'
+import logo from './icon200.png'
 
 let images = {
+    logo,
     squat,
     mongo, 
     git,

@@ -42,7 +42,7 @@ class Apps extends Component {
 
     render() {
         return (
-            this.state.pageShow ? <HomeScreen pageShow={this.state.pageShow} handleClick={this.handleClick} mobile={this.state.mobile}/> :
+            !this.state.pageShow ? <HomeScreen pageShow={this.state.pageShow} handleClick={this.handleClick} mobile={this.state.mobile}/> :
                 <div className="viewport" style={{ flexGrow: 1 }} >
                     <TitleScreen mobile={this.state.mobile}/>
                     <ProjectsScreen mobile={this.state.mobile} />

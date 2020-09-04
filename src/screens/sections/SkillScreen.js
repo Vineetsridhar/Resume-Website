@@ -57,7 +57,7 @@ export default function SkillsScreen({mobile}) {
                     Others I've worked with
                     </div>
             </ZoomIn>
-            <div className="iconHolder" style={mobile ? {overflowX:'scroll'} : {}}>
+            <div className="iconHolder" style={mobile ? {overflow:'scroll'} : {}}>
                 {subImages.map((image, i) =>
                     <FadeUp  {...heliumOptions} delay={animDelay + (scale * (i))} transitionDistance={transDistance} >
                         <img src={image} className="smallIcons" style={{ maxHeight: 200 }} />
@@ -69,10 +69,10 @@ export default function SkillsScreen({mobile}) {
                     Skills
                 </div>
             </ZoomIn>
-            <div className="iconHolder" style={mobile ? {overflowX:'scroll'} : {}}>
+            <div className="iconHolder" style={mobile ? {overflowY:'scroll', width: '100vw', justifyContent: "center"} : {}}>
                 {skills.map((image, i) =>
                     <FadeUp {...heliumOptions} delay={animDelay + (scale * (i))} transitionDistance={transDistance} >
-                        <img src={image} style={mobile?{maxWidth:200}:{}} className="smallIcons" />
+                        <img src={image} style={mobile?{maxWidth:200, flexWrap: 'wrap', paddingLeft: 10}:{}} className="smallIcons" />
                     </FadeUp>
                 )}
             </div>

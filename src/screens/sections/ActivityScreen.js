@@ -6,7 +6,7 @@ import Section from '../Section'
 import SplitText from '../SplitText'
 import ReactTooltip from 'react-tooltip'
 
-export default function ActivitiesScreen() {
+export default function ActivitiesScreen({mobile}) {
     return (
         <div className="ActivityViewport" >
             <Section
@@ -21,7 +21,7 @@ export default function ActivitiesScreen() {
             />
             <ZoomIn>
                 <div className="genericBox acmBox">
-                    <img src={images.acm} className="logo" />
+                    {mobile ? null : <img src={images.acm} className="logo" />}
                     <div className="abt">
                         <text style={{ fontSize: '1.4em', fontWeight: 'bold', color: "#ffffff" }}>Association of Computing Machinery</text>
                         <h3 data-tip="SIG: Special Interest Group">Founder and instructor of SIG Flutter and SIG Android </h3>
@@ -39,7 +39,7 @@ export default function ActivitiesScreen() {
             </ZoomIn>
             <ZoomIn>
                 <div className="genericBox woodBox" >
-                    <img src={images.woodbridge} className="logo" />
+                    {mobile ? null : <img src={images.woodbridge} className="logo" />}
                     <div className="abt">
                         <text style={{ fontSize: '1.4em', fontWeight: 'bold', color: "#ffffff" }}>Woodbridge High School</text>
                         <p /> GPA: 4.0/4.0

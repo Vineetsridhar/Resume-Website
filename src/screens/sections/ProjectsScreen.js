@@ -29,9 +29,11 @@ export default function ProjectsScreen({mobile}) {
                     <div className="abt">
                         <span style={{ flexDirection: 'row', display: 'flex', maxHeight: '100px' }}>
                             <h1 style={{ fontSize: '1.8em', fontWeight: 'bold', color: "#ffffff" }}>Glyde</h1>
-                            {mobile ? null :[images.javascript, images.react, images.aws, images.mongo].map((image, i) =>
-                                <img src={image} style={mobile? {paddingRight:10, paddingLeft:10}:{}} className="smallIcons" />
-                            )}
+                            <span style={{display:'flex', flexGrow:1, overflow:'scroll'}}>
+                                {mobile ? null :[images.javascript, images.react, images.aws, images.mongo].map((image, i) =>
+                                    <img src={image} style={mobile? {paddingRight:10, paddingLeft:10}:{}} className="smallIcons" />
+                                )}
+                            </span>
                         </span>
                         <p>Application which is automating the ordering and payment
                             process within various food establishments </p>
@@ -124,9 +126,11 @@ export default function ProjectsScreen({mobile}) {
                     <div className="abt">
                         <span style={{ flexDirection: 'row', display: 'flex', maxHeight: '100px' }}>
                             <h1 style={{ fontSize: '1.8em', fontWeight: 'bold', color: "#ffffff" }}>Measurable</h1>
-                            {mobile ? null :[images.java, images.android].map((image, i) =>
-                                <img src={image} className="smallIcons" />
-                            )}
+                            <span style={mobile ? {display:'flex', flexGrow:1, overflow:'scroll'} : {}}>
+                                {mobile ? null :[images.java, images.android].map((image, i) =>
+                                    <img src={image} className="smallIcons" />
+                                )}
+                            </span>
                         </span>
                         <p>Mobile application which leverages the phone’s built in
                         sensors to determine height and distance from objects in

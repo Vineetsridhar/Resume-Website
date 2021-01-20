@@ -1,7 +1,10 @@
 import React from 'react'
-import images from '../../assets'
-import { ZoomIn, FadeUp, FadeRight } from 'happy-helium'
+import { ZoomIn, FadeRight } from 'happy-helium'
 import Section from '../Section'
+import FadeItem from '../../components/FadeItem'
+import ItemContainer from '../../components/ItemContainer'
+import { skills, mainImages, subImages } from '../../data/skillData'
+
 const heliumOptions = {
     speed: 450,
     easing: 'ease',
@@ -10,13 +13,9 @@ const heliumOptions = {
     animation: true,
     offset: 20 //based on percentage from bottom of browser window
 }
-export default function SkillsScreen({mobile}) {
+export default function SkillsScreen({ mobile }) {
     const animDelay = 100
     const scale = 50
-    const transDistance = 100
-    let mainImages = [[images.js, "JavaScript"], [images.python, "Python"]];
-    let subImages = [images.java, images.cplus, images.dart, images.bash, images.sql];
-    let skills = [images.mongo, images.git, images.graphql, images.aws, images.nodejs, images.react, images.firebase, images.docker]
     return (
         <div className="skillsSection" >
             <Section
@@ -29,53 +28,50 @@ export default function SkillsScreen({mobile}) {
                     </div>
                 </FadeRight>}
             />
-            <ZoomIn>
-                <div
-                    className="subtitleText"
-                    style={{ textAlign: 'left', width: '100%', }}>
-                    My Favorites
-                    </div>
-            </ZoomIn>
-            <div className='iconHolder'>
-                {
-                    mainImages.map((languageArray, i) =>
-                        (<FadeUp
-                            {...heliumOptions}
-                            delay={animDelay + (i * scale)} transitionDistance={transDistance}>
-                            <div className="indiHolder">
-                                <img src={languageArray[0]} className="picProps" style={{ width:mobile ? 50 :'8vw', maxHeight: 200 }} />
-                                <text className="wordProps" style={{ width:mobile ? 50 :'8vw' }}>{languageArray[1]}</text>
-                            </div>
-                        </FadeUp>)
-                    )
-                }
-            </div>
-            <ZoomIn  {...heliumOptions}>
-                <div
-                    className="subtitleText"
-                    style={{ textAlign: 'left', width: '100%', paddingTop: 16 }}>
-                    Others I've worked with
-                    </div>
-            </ZoomIn>
-            <div className="iconHolder" style={mobile ? {overflow:'scroll'} : {}}>
-                {subImages.map((image, i) =>
-                    <FadeUp  {...heliumOptions} delay={animDelay + (scale * (i))} transitionDistance={transDistance} >
-                        <img src={image} className="smallIcons" style={{ maxHeight: 200 }} />
-                    </FadeUp>
+
+            <ItemContainer
+                items={mainImages.map((item, i) =>
+                    <FadeItem
+                        delay={animDelay + (i * scale)}
+                        title={item.title}
+                        style={{}}
+                        logo={item.logo}
+                        className="picProps"
+                        mobile={mobile} />
                 )}
-            </div>
+                title={"My favorites"} />
+            <ItemContainer
+                items={subImages.map((item, i) =>
+                    <FadeItem
+                        delay={animDelay + (i * scale)}
+                        title={item.title}
+                        style={{}}
+                        logo={item.logo}
+                        className="smallIcons"
+                        mobile={mobile} />
+                )}
+                title={"Others I've worked with"} />
+
+   
             <ZoomIn  {...heliumOptions}>
                 <div className="sectionTitle" style={{ fontSize: '6vw' }}>
                     Skills
                 </div>
             </ZoomIn>
-            <div className="iconHolder" style={mobile ? {overflowY:'scroll', width: '100vw', justifyContent: "center"} : {}}>
-                {skills.map((image, i) =>
-                    <FadeUp {...heliumOptions} delay={animDelay + (scale * (i))} transitionDistance={transDistance} >
-                        <img src={image} style={mobile?{maxWidth:200, flexWrap: 'wrap', paddingLeft: 10}:{}} className="smallIcons" />
-                    </FadeUp>
+
+            <ItemContainer
+                items={skills.map((item, i) =>
+                    <FadeItem
+                        delay={animDelay + (i * scale)}
+                        title={item.title}
+                        style={{}}
+                        logo={item.logo}
+                        className="smallIcons"
+                        mobile={mobile} />
                 )}
-            </div>
+                title={""} />
+
+
         </div>
     )
 }

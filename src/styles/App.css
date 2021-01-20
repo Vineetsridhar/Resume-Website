@@ -37,9 +37,7 @@
 .buttonProps:hover{
     transform: scale(1.05);
 }
-.buttonProps:active{
-    
-}
+
 .line2{
     position: static;
     top: 250px;
@@ -204,8 +202,8 @@
 .iconHolder {
     padding-top: 16px;
     display: flex;
-    min-height: 20vh;
     align-items: center;
+    min-height: 200px;
 }
 
 .smallIcons {
@@ -230,6 +228,7 @@
     text-align: center;
     padding-right: 30px;
     padding-left: 30px;
+    padding-top: 16px;
 }
 
 .indiHolder:hover>.picProps {

@@ -18,7 +18,7 @@ class Apps extends Component {
         super(props)
         this.state = {
             height: 0,
-            pageShow: false,
+            pageShow: true,
             mobile: window.innerWidth <= MOBILE_THRESHOLD
         }
         this.handleClick = this.handleClick.bind(this)

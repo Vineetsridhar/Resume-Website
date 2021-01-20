@@ -65,10 +65,9 @@
 
 .sectionViewport {
     display: flex;
-    height: 100vh;
     width: 100vw;
+    min-height: 100vh;
     flex-direction: column;
-    padding-top: 5vh;
     align-items: center;
     background-color: #212121;
 }
@@ -139,11 +138,11 @@
 
 .pic {
     z-index: 99;
-    width: 16vw;
-    height: 16vw;
+    width: 500px;
+    height: 500px;
     animation: fadeup;
     animation-duration: 2s;
-    border-radius: 8vw;
+    border-radius: 250px;
 }
 @keyframes fadeup{
     0%{
@@ -156,6 +155,8 @@
     }
 }
 
+
+
 .titleText {
     padding-top: 2vh;
     font-size: 5vw;
@@ -167,11 +168,10 @@
 
 .sectionTitle {
     padding-top: 2vh;
-    font-size: 8vw;
+    font-size: min(15vmin, 150px);
     color: #4592af;
     font-family: 'OCR A', 'OCR A', monospace;
 }
-
 
 .sectionTitleActivities {
     padding-top: 2vh;
@@ -194,16 +194,17 @@
 
 .subtitleText2 {
     padding-top: 4vh;
-    font-size: 2vw;
+    font-size: max(2vw, 15px);
     text-align: left;
     font-family: 'Courier New', Courier, monospace;
     color: #e3c4a8;
+    /* padding-left: 10vw; */
 }
 
 .iconHolder {
     padding-top: 16px;
     display: flex;
-    height: 20vh;
+    min-height: 20vh;
     align-items: center;
 }
 

@@ -42,6 +42,7 @@ import email from './email.png'
 import linkedin from './linkedin.png'
 import squat from './squat.jpg'
 import logo from './icon200.png'
+import codepath from './codepath.png'
 
 let images = {
     logo,
@@ -85,7 +86,8 @@ let images = {
     sql,
     github,
     email,
-    linkedin
+    linkedin,
+    codepath
 }
 
 export default images

@@ -11,15 +11,15 @@ import ActivitiesScreen from './sections/ActivityScreen';
 import ProjectsScreen from './sections/ProjectsScreen';
 import ContactScreen from './sections/ContactScreen';
 
-
+const MOBILE_THRESHOLD = 1000;
 class Apps extends Component {
 
     constructor(props) {
         super(props)
         this.state = {
             height: 0,
-            pageShow: true,
-            mobile: window.innerWidth <= 500
+            pageShow: false,
+            mobile: window.innerWidth <= MOBILE_THRESHOLD
         }
         this.handleClick = this.handleClick.bind(this)
         this.resizeHandler = this.resizeHandler.bind(this)
@@ -30,7 +30,7 @@ class Apps extends Component {
     }
 
     resizeHandler(){
-        let mobile = window.innerWidth <= 500;
+        let mobile = window.innerWidth <= MOBILE_THRESHOLD;
         if(mobile !== this.state.mobile){
             this.setState({mobile})
         }

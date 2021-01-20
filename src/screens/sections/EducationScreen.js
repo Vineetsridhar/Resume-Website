@@ -1,6 +1,5 @@
 import React from 'react'
 import images from '../../assets'
-import { Link } from 'react-scroll'
 import { ZoomIn, FadeUp } from 'happy-helium'
 import Section from '../Section'
 import SplitText from '../SplitText'
@@ -32,11 +31,10 @@ export default function EducationScreen() {
 
             <ZoomIn {...heliumOptions}>
                 <div className="subtitleText2">
-                    <text style={{ fontWeight: 'bold', fontSize: '2.5vw', color: '#ffffff' }}>New Jersey Institute of Technology, </text> Newark, NJ <br />
+                    <text style={{ fontWeight: 'bold', fontSize: ' max(2.5vw, 15px)', color: '#ffffff' }}>New Jersey Institute of Technology, </text> Newark, NJ <br />
                     <text style={{ paddingTop: 10 }}>Albert Dorman Honors College<br /></text>
                     <text>B.S. Computer Science<br /></text>
-                    <text>Data Science and Business Minor<br /></text>
-                    <text>Expected Graduation: May 2022 <br /></text>
+                    <text>Expected Graduation: December 2021 <br /></text>
                     <text style={{ fontWeight: 'bold', fontSize: '2.5vw', color: '#ffffff' }}> GPA: 3.98/4.0</text>
                 </div>
             </ZoomIn>

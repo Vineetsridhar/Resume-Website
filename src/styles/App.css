@@ -406,6 +406,7 @@
     text-align: left;
     font-size: 1.4em;
     color: #e3c4a8;
+    width:calc(80% - 300px);
     padding-left: 16px;
 }
 

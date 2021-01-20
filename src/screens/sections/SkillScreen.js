@@ -36,10 +36,11 @@ export default function SkillsScreen({ mobile }) {
                         title={item.title}
                         style={{}}
                         logo={item.logo}
-                        className="picProps"
+                        className="smallIcons"
                         mobile={mobile} />
                 )}
-                title={"My favorites"} />
+                mobile={mobile}
+                title={"My Favorites"} />
             <ItemContainer
                 items={subImages.map((item, i) =>
                     <FadeItem
@@ -50,6 +51,7 @@ export default function SkillsScreen({ mobile }) {
                         className="smallIcons"
                         mobile={mobile} />
                 )}
+                mobile={mobile}
                 title={"Others I've worked with"} />
 
    
@@ -69,6 +71,7 @@ export default function SkillsScreen({ mobile }) {
                         className="smallIcons"
                         mobile={mobile} />
                 )}
+                mobile={mobile}
                 title={""} />
 
 

@@ -6,6 +6,7 @@ export const projectData = [
         site: "https://glyde.app/",
         image: images.glyde,
         title: "Glyde",
+        tip:"Click to see our site",
         logos: [images.javascript, images.react, images.aws, images.mongo],
         points: ["Mobile and web application which automates the ordering and payment process within various food establishments",
                 "Partnered with multiple companies such as Olo and Brink and has been implemented at over 5 restaurants",

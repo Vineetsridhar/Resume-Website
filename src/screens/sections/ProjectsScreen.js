@@ -29,7 +29,8 @@ export default function ProjectsScreen({ mobile }) {
                     logos={data.logos}
                     site={data.site}
                     image={data.image}
-                    mobile={mobile} />
+                    mobile={mobile}
+                    tip={data.tip} />
             )}
 
 

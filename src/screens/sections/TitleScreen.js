@@ -19,6 +19,12 @@ export default function TitleScreen({ mobile }) {
             link: "projects",
             title: "Projects",
             duration: 1200,
+            logo: images.activity
+        },
+        {
+            link:"skills",
+            title:"Skills",
+            duration: 2000,
             logo: images.code
         },
         {

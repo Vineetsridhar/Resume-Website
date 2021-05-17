@@ -44,6 +44,9 @@ import squat from './squat.jpg'
 import logo from './icon200.png'
 import codepath from './codepath.png'
 import terra from './terra.png'
+import coursework from './coursework.png'
+import c from './c.png'
+import psql from './psql.png'
 
 let images = {
     logo,
@@ -89,7 +92,10 @@ let images = {
     email,
     linkedin,
     codepath,
-    terra
+    terra,
+    c,
+    coursework,
+    psql
 }
 
 export default images

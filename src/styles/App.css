@@ -351,6 +351,7 @@
     margin:0 auto;
     padding: 20px;
     border-radius: 10pt;
+    margin-top:50px;
 }
 
 .rmpBox{
@@ -372,7 +373,6 @@
 }
 
 .clickableBox{
-    margin-top:50px;
     cursor: pointer;
 }
 

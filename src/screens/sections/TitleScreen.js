@@ -40,9 +40,15 @@ export default function TitleScreen({ mobile }) {
             logo: images.bulb
         },
         {
+            link: "coursework",
+            title: "Coursework",
+            duration: 3000,
+            logo:images.coursework
+        },
+        {
             link: "contact",
             title: "Contact",
-            duration: 2500,
+            duration: 3500,
             logo:images.contact
         },
     ]

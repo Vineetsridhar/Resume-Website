@@ -35,7 +35,7 @@ export const activitiesData = [
         tip: "Check out the devpost",
         logos: [],
         points: ["Attended every HackNJIT event from the past 3 years",
-            "Won the 2020 event",
+            "Got first place at HackNJIT Fall 2020",
             ["Developed an application which allowed users from around the world to play music together"],
         ]
     },

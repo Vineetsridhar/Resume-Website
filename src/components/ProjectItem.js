@@ -5,8 +5,8 @@ import ReactTooltip from 'react-tooltip';
 export default function ProjectItem({ className, site, image, title, logos, points, mobile, tip }) {
     return (
         <ZoomIn>
-            <div className={`genericBox clickableBox ${className}`}
-                onClick={() => window.open(site, "_blank")}
+            <div className={`genericBox ${site && "clickableBox"} ${className}`}
+                onClick={site && (() => window.open(site, "_blank"))}
                 data-tip={tip}>
                 {mobile ? null : <img src={image} className="logo" />}
                 <div className="abt">

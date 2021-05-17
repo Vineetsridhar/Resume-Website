@@ -10,6 +10,7 @@ import SkillsScreen from './sections/SkillScreen';
 import ActivitiesScreen from './sections/ActivityScreen';
 import ProjectsScreen from './sections/ProjectsScreen';
 import ContactScreen from './sections/ContactScreen';
+import CourseScreen from './sections/CourseScreen';
 
 const MOBILE_THRESHOLD = 1000;
 class Apps extends Component {
@@ -18,7 +19,7 @@ class Apps extends Component {
         super(props)
         this.state = {
             height: 0,
-            pageShow: false,
+            pageShow: true,
             mobile: window.innerWidth <= MOBILE_THRESHOLD
         }
         this.handleClick = this.handleClick.bind(this)
@@ -49,6 +50,7 @@ class Apps extends Component {
                     <SkillsScreen mobile={this.state.mobile}/>
                     <EducationScreen />
                     <ActivitiesScreen mobile={this.state.mobile}/>
+                    <CourseScreen mobile={this.state.mobile}/>
                     <ContactScreen />
 
                     <div style={{ marginTop: 1000, color: '#FFFFFF' }} />

@@ -1,23 +1,23 @@
 self.__precacheManifest = [
   {
-    "revision": "f4262796f13c87ec4228",
-    "url": "/static/css/main.6cb64b76.chunk.css"
+    "revision": "1d6a9488720e5937bd47",
+    "url": "/static/css/main.8eafcacb.chunk.css"
   },
   {
-    "revision": "f4262796f13c87ec4228",
-    "url": "/static/js/main.f4262796.chunk.js"
+    "revision": "1d6a9488720e5937bd47",
+    "url": "/static/js/main.1d6a9488.chunk.js"
   },
   {
     "revision": "fdfcfda2d9b1bf31db52",
     "url": "/static/js/runtime~main.fdfcfda2.js"
   },
   {
-    "revision": "9fe9f81a01260d660a29",
+    "revision": "19954a9acad740fec8da",
     "url": "/static/css/2.bb8fc951.chunk.css"
   },
   {
-    "revision": "9fe9f81a01260d660a29",
-    "url": "/static/js/2.9fe9f81a.chunk.js"
+    "revision": "19954a9acad740fec8da",
+    "url": "/static/js/2.19954a9a.chunk.js"
   },
   {
     "revision": "99285d234b3b523dfdd369f2d8a2f654",
@@ -176,7 +176,15 @@ self.__precacheManifest = [
     "url": "/static/media/squat.56a69db8.jpg"
   },
   {
-    "revision": "1b8307d473e2610465001a6f939c74be",
+    "revision": "52323e2465eecbcad7a3b0fd1c2f41ca",
+    "url": "/static/media/codepath.52323e24.png"
+  },
+  {
+    "revision": "d31b777a4594dc02660a799693fec84b",
+    "url": "/static/media/terra.d31b777a.png"
+  },
+  {
+    "revision": "0568c04c8c58ce1c36d61395fc1972cb",
     "url": "/index.html"
   }
 ];

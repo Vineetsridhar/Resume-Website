@@ -38,11 +38,11 @@ export default function ProjectsScreen({ mobile }) {
                 <div className="genericBox clickableBox glydeBox" onClick={() => window.open("https://github.com/Vineetsridhar/sound-data-transfer", "_blank")}>
                     {mobile ? null : <img src={images.datatransfer} className="logo" />}
                     <div className="abt">
-                        <span style={{ flexDirection: 'row', display: 'flex', maxHeight: '100px' }}>
-                            <h1 style={{ fontSize: '1.8em', fontWeight: 'bold', color: "#ffffff" }}>Sound Data Transfer</h1>
-                            {mobile ? null : [images.python].map((image, i) =>
-                                <img src={image} className="smallIcons" style={{ flex: 'initial' }} />
-                            )}
+                        <span style={{ flexDirection: 'row', display: 'flex', maxHeight: '100px'    }}>
+                            <h1 style={{ fontSize: '1.8em', fontWeight: 'bold', color: "#ffffff", minWidth:250}}>Sound Data Transfer</h1>
+                            {!mobile &&
+                                <img src={images.python} style={{ maxHeight: 100, flex: 'initial' }} className="smallIcons" />
+                            }
                         </span>
 
                         <ul>

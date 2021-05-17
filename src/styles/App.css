@@ -214,7 +214,6 @@
 }
 
 .smallIcons {
-    flex: 1;
     padding-right: 25px;
     padding-left: 25px;
     object-fit: contain;

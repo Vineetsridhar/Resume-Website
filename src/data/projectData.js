@@ -10,10 +10,25 @@ export const projectData = [
         logos: [images.javascript, images.react, images.aws, images.mongo],
         points: ["Mobile and web application which automates the ordering and payment process within various food establishments",
                 "Partnered with multiple companies such as Olo and Brink and has been implemented at over 5 restaurants",
-                "Working with 6 team members to grow the company as well as managing 4 developers in building the application itself",
+                "Working with 6 team members to expand the project as well as managing 4 developers in building the application itself",
                 "Experience using AWS Elastic Beanstalk with Node JS server and MongoDB database.",
                 "Implemented an authentication middleware using JWT",
             ]
+    },
+    {
+        className:"rmpBox",
+        site: "https://github.com/Vineetsridhar/terra-pay",
+        image: images.terra,
+        title: "Terra Pay",
+        logos: [images.javascript, images.react],
+        points: [
+            "A application to bring decentralized finance to the masses",
+            "Utilizes the Terra blockchain and basic cryptography to allow users to send money to eachother in a decentralized, untraceable way.",
+            "Uses the Terra SDK to conduct financial transactions via the Terra blockchain",
+            "Created a mock fiat on-ramp using Stripe API",
+            "Implemented Diffie-Hellman algorithm for Peer-to-peer key exchange",
+            "Won Organizer's choice and best financial hack at the Drexel University hackathon (Spring 2021)"
+        ]
     },
     {
         className:"dataTransferBox",

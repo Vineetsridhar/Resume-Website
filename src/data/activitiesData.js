@@ -10,7 +10,7 @@ export const activitiesData = [
         logos: [],
         points: ["Participated in a 6-week training course to gain leadership experience to teach a course at a university",
             "Helped found and manage the Codepath course at NJIT to help underrepresented college students succeed in careers in software engineering",
-            "Leading a course of 30+ students",
+            "Leading a course of 50+ students",
             "Taught a variety of material including Android Programming, Firebase/Parse database, MVC Architecture, etc"
         ]
     },
@@ -34,9 +34,9 @@ export const activitiesData = [
         title: "HackNJIT",
         tip: "Check out the devpost",
         logos: [],
-        points: ["Attended every HackNJIT from the past 3 years",
+        points: ["Attended every HackNJIT event from the past 3 years",
             "Won the 2020 event",
-            ["Developed an applicaiton which allowed users from around the world to play music together"],
+            ["Developed an application which allowed users from around the world to play music together"],
         ]
     },
     {

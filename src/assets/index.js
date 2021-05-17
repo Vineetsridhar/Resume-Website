@@ -43,6 +43,7 @@ import linkedin from './linkedin.png'
 import squat from './squat.jpg'
 import logo from './icon200.png'
 import codepath from './codepath.png'
+import terra from './terra.png'
 
 let images = {
     logo,
@@ -87,7 +88,8 @@ let images = {
     github,
     email,
     linkedin,
-    codepath
+    codepath,
+    terra
 }
 
 export default images

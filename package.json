@@ -12,6 +12,7 @@
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "react-gsap": "^1.2.0",
+    "react-headroom": "^3.1.1",
     "react-ladda": "^6.0.0",
     "react-page-scroller": "^1.4.3",
     "react-scripts": "2.1.5",

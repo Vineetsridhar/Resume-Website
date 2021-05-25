@@ -7,7 +7,7 @@ import { courseData } from '../../data/courseData'
 
 export default function CourseScreen({mobile}) {
     return (
-        <div className="ActivityViewport" >
+        <div className="viewport" >
             <Section
                 paddingTop={100}
                 dark={false}

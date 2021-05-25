@@ -17,7 +17,7 @@ export const projectData = [
     },
     {
         className:"rmpBox",
-        site: "https://github.com/Vineetsridhar/terra-pay",
+        site: "https://devpost.com/software/terra-pay",
         image: images.terra,
         title: "Terra Pay",
         logos: [images.javascript, images.react],

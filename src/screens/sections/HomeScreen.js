@@ -6,6 +6,8 @@ export default function HomeScreen({ pageShow, handleClick, mobile }) {
     let br = () => {
         return mobile ? null : <br />
     }
+    //Source: https://stackoverflow.com/a/50827764
+    const age = Math.floor((new Date() - new Date("01-16-2000").getTime()) / 3.15576e+10)
     return (
         <div className="introViewport" 
             style={mobile?{
@@ -23,7 +25,7 @@ export default function HomeScreen({ pageShow, handleClick, mobile }) {
                 </div>
                 {/* <div className="line2" /> */}
                 <div className="bioText" style={mobile? {fontSize: '15px', textAlign:'center'}:{}}>
-                    I am a 20 year old developer from {br()}
+                    I am a {age} year old developer from {br()}
                         Woodbridge, New Jersey. I have {br()}
                         a passion for learning new things, {br()}
                         meeting new people, and going to new {br()}

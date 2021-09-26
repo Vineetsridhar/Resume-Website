@@ -143,8 +143,10 @@
 
 .pic {
     z-index: 99;
-    width: 500px;
-    height: 500px;
+    width: 35vw;
+    height: 35vw;
+    max-width: 500px;
+    max-height: 500px;
     animation: fadeup;
     animation-duration: 2s;
     border-radius: 250px;

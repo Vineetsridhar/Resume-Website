@@ -25,6 +25,7 @@ import acm from './acm.png'
 import woodbridge from './woodbridge.png'
 import bash from './bash.png'
 import js from './javascript.jpg'
+import sitting from './sitting.jpg'
 
 import mongo from './mongo.png';
 import git from './git.png'
@@ -95,7 +96,8 @@ let images = {
     terra,
     c,
     coursework,
-    psql
+    psql,
+    sitting
 }
 
 export default images

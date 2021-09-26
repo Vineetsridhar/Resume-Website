@@ -54,8 +54,8 @@ export default function TitleScreen({ mobile }) {
     ]
     return (
         <div className="sectionViewport">
-            <img src={images.squat}
-                className="pic" style={mobile ? { width: '50vw', height: '50vw', borderRadius: '25vw', objectFit: 'contain' } : {}} />
+            <img src={images.sitting}
+                className="pic" style={mobile ? { width: '50vw', height: '50vw', borderRadius: '25vw' } : {}} />
 
             <text className="titleText" style={mobile ? { fontSize: '10vw' } : {}}>Vineet Sridhar</text>
 

@@ -20,7 +20,7 @@ class Apps extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            pageShow: true,
+            pageShow: false,
             mobile: window.innerWidth <= MOBILE_THRESHOLD,
             scrollPosition: 0
         }
@@ -68,12 +68,12 @@ class Apps extends Component {
                     {this.state.scrollPosition > 0.05 && !this.state.mobile && <Header />}
 
                     <div className="viewport" style={{ flexGrow: 1 }} >
-                        <TitleScreen mobile={this.state.mobile} />
+                        {/* <TitleScreen mobile={this.state.mobile} />
                         <ProjectsScreen mobile={this.state.mobile} />
                         <SkillsScreen mobile={this.state.mobile} />
                         <EducationScreen />
                         <ActivitiesScreen mobile={this.state.mobile} />
-                        <CourseScreen mobile={this.state.mobile} />
+                        <CourseScreen mobile={this.state.mobile} /> */}
                         <ContactScreen />
 
                         <div style={{ marginTop: 1000, color: '#FFFFFF' }} />

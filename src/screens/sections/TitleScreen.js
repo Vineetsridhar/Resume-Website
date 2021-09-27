@@ -36,19 +36,19 @@ export default function TitleScreen({ mobile }) {
         {
             link: "activities",
             title: "Activities",
-            duration: 2000,
+            duration: 3000,
             logo: images.bulb
         },
         {
             link: "coursework",
             title: "Coursework",
-            duration: 3000,
+            duration: 4000,
             logo:images.coursework
         },
         {
             link: "contact",
             title: "Contact",
-            duration: 3500,
+            duration: 5000,
             logo:images.contact
         },
     ]

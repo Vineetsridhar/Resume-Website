@@ -48,6 +48,7 @@ import terra from './terra.png'
 import coursework from './coursework.png'
 import c from './c.png'
 import psql from './psql.png'
+import impression from './impression.png'
 
 let images = {
     logo,
@@ -97,7 +98,8 @@ let images = {
     c,
     coursework,
     psql,
-    sitting
+    sitting,
+    impression
 }
 
 export default images

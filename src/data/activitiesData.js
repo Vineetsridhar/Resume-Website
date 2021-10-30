@@ -9,9 +9,9 @@ export const activitiesData = [
         tip: "",
         logos: [],
         points: ["Participated in a 6-week training course to gain leadership experience to teach a course at a university",
-            "Helped found and manage the Codepath course at NJIT to help underrepresented college students succeed in careers in software engineering",
-            "Leading a course of 50+ students",
-            "Taught a variety of material including Android Programming, Firebase/Parse database, MVC Architecture, etc"
+            "Founded and managed the CodePath course at NJIT to help over 50 underrepresented college students succeed in software engineering careers",
+            "Created lesson plans to teach students the fundamentals of Android Programming and Software Engineering",
+            "Demonstrated use of Git, APIs, Unix, databases, MVC architecture, and other technologies by creating mobile applications similar to Instagram, IMDB, Google Keep, and Twitter."
         ]
     },
     {
@@ -23,8 +23,7 @@ export const activitiesData = [
         logos: [],
         points: ["Founder and instructor of SIG Flutter and SIG Android",
             ["Met with students once a week for hands-on training with building mobile applications using these frameworks"],
-            "NJIT Programming Team",
-            "Participated in the International Collegiate Programming Competition",
+            "Tutors dozens of students in upper-level CS classes",
         ]
     },
     {
@@ -35,8 +34,19 @@ export const activitiesData = [
         tip: "Check out the devpost",
         logos: [],
         points: ["Attended every HackNJIT event from the past 3 years",
-            "Got first place at HackNJIT Fall 2020",
+            "Received first place at HackNJIT Fall 2020",
             ["Developed an application which allowed users from around the world to play music together"],
+        ]
+    },
+    {
+        className: "dataTransferBox",
+        site: "https://njit.campuslabs.com/engage/organization/programmingteam",
+        image: images.njit,
+        title: "NJIT Programming Team",
+        tip: "",
+        logos: [],
+        points: ["Competed in the International Collegiate Programming Competition (ICPC)",
+            "Demonstrated use of advanced data structures and algorithms to 50+ students",
         ]
     },
     {

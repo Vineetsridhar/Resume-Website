@@ -8,11 +8,10 @@ export const projectData = [
         title: "Glyde",
         tip:"Click to see our site",
         logos: [images.javascript, images.react, images.aws, images.mongo],
-        points: ["Mobile and web application which automates the ordering and payment process within various food establishments",
-                "Partnered with multiple companies such as Olo and Brink and has been implemented at over 5 restaurants",
-                "Working with 6 team members to expand the project as well as managing 4 developers in building the application itself",
-                "Experience using AWS Elastic Beanstalk with Node JS server and MongoDB database.",
-                "Implemented an authentication middleware using JWT",
+        points: ["Built an application to facilitate the ordering and payment process within any food establishment",
+                "Collaborated with a diverse team of 5 engineers to develop a mobile application using React Native frontend and a NodeJS backend deployed on AWS Elastic Beanstalk using MongoDB as the datastore",
+                "Led a team of 5 developers to build mobile and web applications used by restaurants, customers, and Glyde employees to manage the Glyde ecosystem",
+                "Raised $350k in funding from Village Global and AngelList to launch at over a dozen restaurants",
             ]
     },
     {
@@ -22,25 +21,10 @@ export const projectData = [
         title: "Terra Pay",
         logos: [images.javascript, images.react],
         points: [
-            "A application to bring decentralized finance to the masses",
-            "Utilizes the Terra blockchain and basic cryptography to allow users to send money to eachother in a decentralized, untraceable way.",
-            "Uses the Terra SDK to conduct financial transactions via the Terra blockchain",
-            "Created a mock fiat on-ramp using Stripe API",
-            "Implemented Diffie-Hellman algorithm for Peer-to-peer key exchange",
+            "An application to bring decentralized finance to the masses",
+            "Utilized the Terra Blockchain to securely transfer funds, Stripe as a mock fiat on-ramp and algorithms such as Diffie-Hellman for P2P key exchange",
             "Won Organizer's choice and best financial hack at the Drexel University hackathon (Spring 2021)"
         ]
-    },
-    {
-        className:"dataTransferBox",
-        site: "https://github.com/SamC12345/MagicMirror",
-        image: images.hacknjit,
-        title: "Magic Mirror",
-        logos: [images.python],
-        points: ["A mirror with a display and camera which uses Artificial Intelligence to track moods.  ",
-                "Records emotion on the user’s face as well as performing a sentiment analysis of users’ responses to a verbal conversation had between them and the mirror. ",
-                "Was also able to use OpenCV and Azure Speech SDK to implement live object tracking so that users can directly interact with the mirror by moving their hands or with voice controls ",
-                "This information could prove to be useful for therapists who want to keep tracks of moods of their patients.  ",
-            ]
     },
     {
         className:"rmpBox",
@@ -48,24 +32,23 @@ export const projectData = [
         image: images.logo,
         title: "Schedule Builder Ext",
         logos: [images.javascript],
-        points: ["Chrome extension which displays professor ratings directly on the NJIT Schedule builder.  ",
-                "Has almost 300 downloads on the Chrome Web Store with a 5-star review",
+        points: ["Developed a Chrome extension to display professor ratings on the official NJIT Schedule builder",
+                "Ensures students can have the best experience by comparing professor details without having to leave the page.",
                 "Created a GraphQL API to query professor ratings from PostgreSQL database",
-                "Used Docker to containerize the Node server, and used Docker-Compose to run the DB and Server on GCP ",
-                "Created a simple caching mechanism, so that the RateMyProfessor site is not constantly being scraped",
-                "Useful for NJIT students who now have easy access to ratings when making their schedules"
+                "Utilized Docker to containerize the Node server, and Docker-Compose to run the database and Server on Google Cloud Platform (GCP) Compute Engine",
+                "Received over 300 downloads on the Chrome Web Store as well as a 5-star rating"
             ]
     },
     {
-        className:"measurableBox",
-        site: "https://github.com/Vineetsridhar/measurable",
-        image: images.ruler,
-        title: "Measurable",
-        logos: [images.java, images.android],
-        points: ["Mobile application which leverages the phone’s built in sensors to determine height and distance from objects in the real world ",
-                "Using trigonometric functions, users can use the camera to mark the bottom and top of an object, and the application will be able to calculate its height and distance from the user",
-                "Could facilitate people like handymen who need estimates of dimensions when giving quotes to clients ",
-        ]
-    },
+        className:"dataTransferBox",
+        site: "https://github.com/Vineetsridhar/Impression",
+        image: images.impression,
+        title: "Impression",
+        logos: [images.react, images.python],
+        points: ["Collaborated with partners to build an application that allows students and recruiters to seamlessly share important information using QR codes.",
+                "Built the application using a React Native frontend and Python backend deployed on Heroku.",
+                "Implemented CI/CD using CircleCI and attained 90% coverage using the coverage and unittest modules",
+            ]
+    }
 
 ]
